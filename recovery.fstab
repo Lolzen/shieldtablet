@@ -1,0 +1,17 @@
+# mount point       fstype    device                                                                flags
+/system             ext4      /dev/block/platform/sdhci-tegra.3/by-name/APP                         flags=display="System";backup=1;
+/system_image       emmc      /dev/block/platform/sdhci-tegra.3/by-name/APP                         flags=display="System image";backup=1;flashimg=1;
+/cache              ext4      /dev/block/platform/sdhci-tegra.3/by-name/CAC                         flags=display="Cache";
+/boot               emmc      /dev/block/platform/sdhci-tegra.3/by-name/LNX                         flags=display="Boot";backup=1;flashimg=1;
+/misc               emmc      /dev/block/platform/sdhci-tegra.3/by-name/MSC                         flags=display="Misc";backup=1;flashimg=1;
+/data               ext4      /dev/block/platform/sdhci-tegra.3/by-name/UDA                         flags=display="Data";
+/usercalib          ext4      /dev/block/platform/sdhci-tegra.3/by-name/RP3                         flags=display="Usercalib";
+/staging            emmc      /dev/block/platform/sdhci-tegra.3/by-name/USP                         flags=display="Staging";
+/metadata           emmc      /dev/block/platform/sdhci-tegra.3/by-name/MDA                         flags=display="Metadata";
+/recovery           emmc      /dev/block/platform/sdhci-tegra.3/by-name/SOS                         flags=display="Recovery";backup=1;flashimg=1;
+/mmc_host*          auto      vfat                                                                  flags=display="Mmc_host*";logical;
+/usb*               auto      vfat                                                                  flags=display="Usb*";logical;
+/sdcard1            vfat      /dev/block/platform/sdhci-tegra.2/by-num/p1                           flags=display="Sdcard1";
+/remote             auto      79a35232-07f9-4230-9df3-4256560ddbd2                                  flags=display="Remote";logical;
+/remote             auto      28f3f3fa-9c68-45be-bf54-7580ab57fd21                                  flags=display="Remote";logical;
+none                swap      /dev/block/zram0                                                      flags=display="None";
