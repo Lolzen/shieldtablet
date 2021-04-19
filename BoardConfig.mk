@@ -55,7 +55,7 @@ BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_SOURCE := kernel/nvidia/shieldtablet
-TARGET_KERNEL_CONFIG := shieldtablet_defconfig
+TARGET_KERNEL_CONFIG := omni_shieldtablet_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := tegra
